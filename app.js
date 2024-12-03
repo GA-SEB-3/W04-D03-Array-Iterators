@@ -35,12 +35,38 @@ console.log([1,2,3].map(()=>{
 
 const nums = [100,2,5,42,99]
 
-const filteredNums = nums.filter((element, index)=>{
+const filteredNums = nums.find((element, index)=>{
 
 
             return element <100
 
-        
 })
 
 console.log(filteredNums)
+
+const cars = [
+    {color: 'red', make: 'BMW', year: 2001},
+    {color: 'white', make: 'Toyota', year: 2013},
+    {color: 'blue', make: 'Ford', year: 2014},
+    {color: 'white', make: 'Tesla', year: 2016}
+  ];
+
+
+
+  function findCar(value){
+    
+  }
+  const whiteCar = cars.findIndex((element)=>{
+
+    return element.color === "blue"
+  })
+  
+
+  console.log(whiteCar)
+
+  const haveOldCar = cars.some((element)=>{
+
+    return element.year < 2000
+  })
+
+  console.log(haveOldCar)
